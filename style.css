@@ -83,7 +83,7 @@ p {
 /* Animación de la Imagen */
 .floating-image {
   width: 225px;
-  margin-top: 5px;
+  margin-top: 35px;
   max-width: 100%;
   height: auto;
   display: inline-block;
