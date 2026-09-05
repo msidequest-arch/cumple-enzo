@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4d58d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  flex-direction: column;
+}
+
+.container {
+  padding: 20px;
+  max-width: 600px;
+}
+
+/* Oculta los elementos hasta hacer clic */
+.hidden-content {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Botón principal (¡Ver sorpresa!) */
+.main-btn {
+  margin-top: 10px;
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #bf0603;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+  transform: scale(1.08);
+  background-color: #8d0801;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón secundario para la música */
+.music-btn {
+  margin-top: 25px;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #001427;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.music-btn:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  -webkit-text-stroke: 1px #bf0603;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  color: #bf0603;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación de la Imagen */
+.floating-image {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.25));
+}
+
+.ps-container {
+  width: 100%;
+  clear: both;
+}
+
+.postscript {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-style: italic;
+  color: #e09f3e;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación flotante */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
