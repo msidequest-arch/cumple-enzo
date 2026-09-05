@@ -76,7 +76,7 @@ h1 {
   letter-spacing: 0px;
   margin-bottom: 15px;
   color: #ffffff;
-  -webkit-text-stroke: 0.5px #bf0603;
+  -webkit-text-stroke: 1px #bf0603;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
