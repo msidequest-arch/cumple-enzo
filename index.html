@@ -50,38 +50,40 @@
       });
     }
 
-    // Acción al presionar "¡Ver sorpresa!" / "Otra vez"
-    btnSorpresa.addEventListener('click', () => {
-      // Muestra la sección oculta
+    // Acción del botón principal
+  btnSorpresa.addEventListener('click', () => {
+    // Si la sección aún está oculta, es el primer clic (Revelar)
+    if (revelado.classList.contains('hidden-content')) {
       revelado.classList.remove('hidden-content');
-      
-      // Cambia el texto del botón
       btnSorpresa.textContent = 'otra vez 🎉';
+      btnSorpresa.classList.add('small-btn');
+    
 
-      // Dispara el confeti
-      lanzarConfeti();
-
-      // Inicia la música si estaba pausada
+      // Inicia la música solo en esta primera interacción
       if (musica.paused) {
         musica.play();
         btnMusica.textContent = 'pausa ⏸';
         btnMusica.classList.add('playing');
       }
-    });
+    }
 
-    // Control manual de Play/Pausa
-    btnMusica.addEventListener('click', () => {
-      if (musica.paused) {
-        musica.play();
-        btnMusica.textContent = 'pausa ⏸';
-        btnMusica.classList.add('playing');
-      } else {
-        musica.pause();
-        btnMusica.textContent = 'play ▶';
-        btnMusica.classList.remove('playing');
-      }
-    });
-  </script>
+    // El confeti se dispara CADA VEZ que se presione el botón
+    lanzarConfeti();
+  });
+
+  // Control manual independiente para reproducir o pausar la música
+  btnMusica.addEventListener('click', () => {
+    if (musica.paused) {
+      musica.play();
+      btnMusica.textContent = 'pausa ⏸';
+      btnMusica.classList.add('playing');
+    } else {
+      musica.pause();
+      btnMusica.textContent = 'play ▶';
+      btnMusica.classList.remove('playing');
+    }
+  });
+</script>
 
 </body>
 </html>

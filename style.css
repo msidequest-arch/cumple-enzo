@@ -60,14 +60,20 @@ body {
   transition: all 0.3s ease;
 }
 
+.main-btn.small-btn {
+  padding: 10px 22px;   /* Reduce el relleno interno */
+  font-size: 0.95rem;   /* Tamaño de fuente más pequeño */
+  margin-bottom: 10px;  /* Ajusta el margen con los elementos inferiores */
+}
+
 .music-btn:hover {
   transform: scale(1.05);
 }
 
 h1 {
   font-family: 'Concert One', cursive;
-  font-size: 2.8rem;
-  letter-spacing: 0.5px;
+  font-size: 3rem;
+  letter-spacing: 0px;
   margin-bottom: 15px;
   color: #ffffff;
   -webkit-text-stroke: 0.5px #bf0603;
@@ -75,7 +81,7 @@ h1 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   opacity: 0.9;
   margin-bottom: 20px;
   color: #bf0603;
@@ -102,8 +108,8 @@ p {
   margin-top: 20px;
   font-size: 1rem;
   font-style: italic;
-  color: #704f1c;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Animación flotante */
